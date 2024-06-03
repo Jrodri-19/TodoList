@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --white: #fafafb;
+    --purple:#9a67ea;
+    --blue-light:#04d4c3;
+    --blue-dark:#2a73c2;
+    --green: #2c7b90;
+    --black:  #000000;
+    --brown:  #6a3636;
+    --red:  #8e0000;
+    --beigh: #b7a47ef9;
+    --grey:  #282727e6;
+}
+
+
+
+
+
+body {
+    background: linear-gradient(to right, var(--brown) , var(--black));
+    height: 100vh;
+}
+.container {
+    max-width:90%;
+    width: 500px;
+    height: 750px;
+    margin: 0 auto;
+    padding: 0 30px;
+} 
+.title h1 {
+    color:var(--white);
+    
+}
+.title span {
+    color: var(--white);
+    letter-spacing: 2px;
+}
+#date {
+    color: var(--white);
+    padding: 50px 15px 5px 0px;
+    text-align: right;
+} 
+
+
+
+
+
+.add-task {
+    background-color: var(--white) ;
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.add-task input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    padding-left: 10px;
+
+}
+.add-task input::placeholder {
+   font-size: 0.9rem;
+   color: var(--black);
+}
+.add-task input:focus {
+    outline: none;
+}
+
+
+
+
+
+.iconoAdd{
+    width: 30px;
+    height: 30px;
+}
+
+.iconoAdd:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.task-section h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.task-section li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right,var(--beigh),var(--brown));
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--grey);
+    margin: 5px 0;
+
+}
+.task-section > ul p {
+    font-size: 1.2rem;
+}
+p[contenteditable="true"]:focus {
+    outline: none; 
+}
+
+
+
+
+
+.line-through{
+    text-decoration: line-through;
+    color : var(--red);
+}
+.iconoLine{
+    width: 30px;
+    height: 30px;
+}
+.iconoLine:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.iconoClear{
+    width: 30px;
+    height: 30px;
+}
+.iconoClear:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+#eliminar-todas {
+    background-color: var(--black); 
+    color: var(--white); 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+#eliminar-todas:hover {
+    background-color: var(--red); 
+}
+#tachar-todas {
+    background-color: var(--black); 
+    color: var(--white); 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+#tachar-todas:hover {
+    background-color: var(--red); 
+}
+.iconoModify{
+    width: 30px;
+    height: 30px;
+}
+
+.iconoModify:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.botones {
+    display: inline-flex; 
+}
+
+.botones img {
+    margin-right: 10px; 
+}
